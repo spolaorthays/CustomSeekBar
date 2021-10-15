@@ -1,4 +1,4 @@
-package br.com.thays.customseekbar
+package br.com.thays.customseekbar.custom
 
 import android.content.Context
 import android.graphics.Canvas
@@ -9,6 +9,7 @@ import android.util.AttributeSet
 import android.util.TypedValue
 import android.widget.SeekBar
 import androidx.core.content.ContextCompat
+import br.com.thays.customseekbar.R
 
 class ColorSlider @JvmOverloads
 constructor(context: Context, attrs: AttributeSet? = null, defStyleAttr: Int = R.attr.seekBarStyle,
@@ -51,8 +52,8 @@ constructor(context: Context, attrs: AttributeSet? = null, defStyleAttr: Int = R
         progressTintList = ContextCompat.getColorStateList(context, android.R.color.transparent)
         splitTrack = false
         setPadding(paddingLeft, paddingTop, paddingRight, paddingBottom + getPixelValueFromDP(16f).toInt())
-        thumb = context.getDrawable(R.drawable.ic_arrow_drop_down_24)
-        transparent = context.getDrawable(R.drawable.ic_baseline_clear_24)
+        thumb = context.getDrawable(R.drawable.ic_arrow_down_24)
+        transparent = context.getDrawable(R.drawable.ic_transparent_label_24)
 
         setOnSeekBarChangeListener(object : OnSeekBarChangeListener {
             override fun onProgressChanged(seekBar: SeekBar?, progress: Int, fromUser: Boolean) {

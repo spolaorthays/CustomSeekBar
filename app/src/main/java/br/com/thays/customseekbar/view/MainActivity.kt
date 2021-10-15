@@ -1,8 +1,8 @@
-package br.com.thays.customseekbar
+package br.com.thays.customseekbar.view
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.widget.LinearLayout
+import br.com.thays.customseekbar.R
 import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {
@@ -12,7 +12,6 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
         selectorColor.addListener { color ->
-            //linearLayout.setBackgroundColor(color)
             frameColor.setBackgroundColor(color)
         }
     }

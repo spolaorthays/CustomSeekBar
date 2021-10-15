@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".MainActivity"
+    tools:context=".view.MainActivity"
     android:id="@+id/linearLayout">
 
     <TextView
@@ -21,7 +21,7 @@
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <br.com.thays.customseekbar.ColorSlider
+    <br.com.thays.customseekbar.custom.ColorSlider
         android:id="@+id/selectorColor"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
